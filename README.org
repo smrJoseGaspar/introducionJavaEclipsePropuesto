@@ -15,6 +15,17 @@
 #+HTML_LINK_HOME: index.html
 #+HTML_LINK_UP: index.html
 #+SETUPFILE: https://github.com/fniessen/org-html-themes/blob/master/org/theme-readtheorg.setup
+#+latex_class: article
+#+latex_class_options:
+#+latex_header:
+#+latex_header_extra:
+#+description:
+#+keywords:
+#+subtitle: Unidad 1. Prueba de aplicaciones web y para dispositivos móviles
+#+latex_footnote_command: \footnote{%s%s}
+#+latex_engraved_theme:
+#+latex_compiler: pdflatex
+
 
 
 
@@ -378,6 +389,7 @@ public class Main {
     - Salir.
 
 29. Genera una secuencia Fibonacci de N términos.
+    
     *Ejercicios de Arrays en Java:*
 30. Leer 5 números por teclado y guardarlos en un array. Luego mostrar el mayor.
 31. Sumar todos los elementos de un array de enteros.
