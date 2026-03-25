@@ -10,6 +10,7 @@ public class Ejercicio028 {
 	public void cajeroAutomatico() {
 	    Scanner scanner = new Scanner(System.in);
 	    int opcion;
+	    consultarSaldo(); // Mostrar saldo inicial para el test
 	    do {
 	        System.out.println("=== CAJERO AUTOMÁTICO ===");
 	        System.out.println("1. Consultar Saldo");

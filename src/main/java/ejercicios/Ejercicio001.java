@@ -22,6 +22,9 @@ public class Ejercicio001 {
     }
     //COMPLETAR METODO
     public double division(double d, double e) {
+        if (e == 0) {
+            throw new ArithmeticException("División por cero");
+        }
         double resultado = d / e;
         return resultado;
     }
