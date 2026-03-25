@@ -5,25 +5,36 @@ import java.util.Scanner;
 
 public class Ejercicio001 {
 	//COMPLETAR METODO
+
 	public double suma(double d, double e) {
-        return 0.0;
+        double resultado = d + e;
+        return resultado;
     }
 	//COMPLETAR METODO
     public double resta(double d, double e) {
-        return 0.0;
+        double resultado = d - e;
+        return resultado;
     }
     //COMPLETAR METODO
     public double multiplicacion(double d, double e) {
-        return 0.0;
+        double resultado = d * e;
+        return resultado;
     }
     //COMPLETAR METODO
     public double division(double d, double e) {
-        return 0.0;
+        if (e == 0) {
+            throw new ArithmeticException("División por cero");
+        }
+        double resultado = d / e;
+        return resultado;
     }
 
     //COMPLETAR METODO
     public void mostrarTodasOperaciones(double num1, double num2) {
-        
+        System.out.println("Suma: " + suma(num1, num2));
+        System.out.println("Resta: " + resta(num1, num2));
+        System.out.println("Multiplicación: " + multiplicacion(num1, num2));
+        System.out.println("División: " + division(num1, num2));
     }
 
     public static void main(String[] args) {

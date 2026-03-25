@@ -4,9 +4,13 @@ public class Ejercicio006 {
 	
 	//COMPLETAR METODO
 	public String obtenerCalificacion(double nota) {
-		return "";
-    }
-
+	    if (nota < 0 || nota > 10) return "Nota no válida";
+	    if (nota < 5) return "Insuficiente";
+	    if (nota < 6) return "Suficiente";
+	    if (nota < 7) return "Bien";
+	    if (nota < 9) return "Notable";
+	    return "Sobresaliente";
+	}
     public static void main(String[] args) {
     	Ejercicio006 ejercicio006 = new Ejercicio006();
         java.util.Scanner scanner = new java.util.Scanner(System.in);

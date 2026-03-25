@@ -4,9 +4,16 @@ public class Ejercicio021 {
 	
 	//COMPLETAR METODO
 	public int contarVocales(String texto) {
-        return 0;
-    }
-
+	    if (texto == null || texto.isEmpty()) return 0;
+	    int count = 0;
+	    String vocales = "aeiouAEIOU";
+	    for (char c : texto.toCharArray()) {
+	        if (vocales.indexOf(c) != -1) {
+	            count++;
+	        }
+	    }
+	    return count;
+	}
     public static void main(String[] args) {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         Ejercicio021 ejercicio = new Ejercicio021();

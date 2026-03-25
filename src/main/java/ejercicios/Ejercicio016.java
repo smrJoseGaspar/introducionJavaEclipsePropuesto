@@ -4,9 +4,8 @@ public class Ejercicio016 {
 	
 	//COMPLETAR METODO
 	public boolean esPar(int n) {
-		return false;
-    }
-
+	    return n % 2 == 0;
+	}
     public static void main(String[] args) {
     	Ejercicio016 ejercicio016 = new Ejercicio016();
         java.util.Scanner scanner = new java.util.Scanner(System.in);
