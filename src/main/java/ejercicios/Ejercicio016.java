@@ -3,8 +3,17 @@ package ejercicios;
 public class Ejercicio016 {
 	
 	//COMPLETAR METODO
-	public boolean esPar(int n) {
-		return false;
+	public boolean esPar(int n)
+	{
+		if(n % 2==0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+			
     }
 
     public static void main(String[] args) {

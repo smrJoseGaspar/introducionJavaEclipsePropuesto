@@ -3,8 +3,16 @@ package ejercicios;
 public class Ejercicio014 {
 	//COMPLETAR METODO
 	public long calcularFactorial(int n) {
-        return 0;
-    }
+	    if (n < 0) {
+	        System.out.println("El número no puede ser negativo");
+	        return 0;
+	    }
+	    long resultado = 1;
+	    for (int i = 1; i <= n; i++) {
+	        resultado = resultado * i;
+	    }
+	    return resultado;
+	}
 
     public static void main(String[] args) {
     	Ejercicio014 ejercicio014 = new Ejercicio014();

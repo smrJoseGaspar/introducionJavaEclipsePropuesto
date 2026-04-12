@@ -5,8 +5,20 @@ import java.util.Scanner;
 public class Ejercicio015 {
 	
 	//COMPLETAR METODO
-	public void mostrarMultiplosTres(int n) {
+	public void mostrarMultiplosTres(int n)
+	{
+		System.out.println("Múltiplos de 3 hasta " + n);
+		if (n<3)			
+		{
+			System.out.println("No debe mostrar múltiplos si N < 3");
+			return;	
+		}
 		
+		for(int i=3; i<= n; i=i+3)
+		{
+			System.out.print(i+" ");
+		}
+		System.out.println();
     }
 
     public static void main(String[] args) {
