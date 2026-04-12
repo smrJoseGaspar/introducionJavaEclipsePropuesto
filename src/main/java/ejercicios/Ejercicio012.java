@@ -5,8 +5,18 @@ import java.util.Scanner;
 public class Ejercicio012 {
 	
 	//COMPLETAR METODO
-	public int sumarHastaCero() {
-		return 0;
+	public int sumarHastaCero() 
+	{
+		java.util.Scanner teclado = new java.util.Scanner(System.in);
+		int suma=0;
+		int numero = teclado.nextInt();
+		while (numero !=0)
+		{
+			suma= suma+numero;
+			numero = teclado.nextInt();
+		}
+	
+		return suma;
     }
 	
 

@@ -4,8 +4,16 @@ public class Ejercicio019 {
 	
 	//COMPLETAR METODO
 	public int potencia(int base, int exponente) {
-        return 0;
-    }
+	    if (exponente < 0) {
+	        throw new IllegalArgumentException("El exponente debe ser no negativo");
+	    }
+	    int resultado = 1;
+	    for (int i = 1; i <= exponente; i++) {
+	        resultado = resultado * base;
+	    }
+	    return resultado;
+	}
+        
 
     public static void main(String[] args) {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
