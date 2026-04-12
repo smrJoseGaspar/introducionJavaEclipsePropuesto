@@ -5,8 +5,7 @@ public class Ejercicio019 {
 	//COMPLETAR METODO
 	public int potencia(int base, int exponente) {
 	    if (exponente < 0) {
-	        System.out.println("El exponente no puede ser negativo");
-	        return 0;
+	        throw new IllegalArgumentException("El exponente debe ser no negativo");
 	    }
 	    int resultado = 1;
 	    for (int i = 1; i <= exponente; i++) {

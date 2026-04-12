@@ -19,10 +19,10 @@ public class Ejercicio001 {
     //COMPLETAR METODO
     public double division(double d, double e) {
         if (e == 0) {
-            System.out.println("No se puede dividir por cero");
-            return 0;
+            throw new ArithmeticException("division por cero");
         }
         return d / e;
+    
     }
 
     //COMPLETAR METODO

@@ -4,7 +4,7 @@ public class Ejercicio008 {
 	
 	//COMPLETAR METODO
 	public boolean esBisiesto(int año) {
-	    if (año % 4 == 0) {
+	    if (año % 4 == 0 && (año % 100 != 0 || año % 400 == 0)) {
 	        return true;
 	    }
 	    return false;

@@ -4,8 +4,7 @@ public class Ejercicio014 {
 	//COMPLETAR METODO
 	public long calcularFactorial(int n) {
 	    if (n < 0) {
-	        System.out.println("El número no puede ser negativo");
-	        return 0;
+	        throw new IllegalArgumentException("El factorial no se puede calcular para números negativos");
 	    }
 	    long resultado = 1;
 	    for (int i = 1; i <= n; i++) {
