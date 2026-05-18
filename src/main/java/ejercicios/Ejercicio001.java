@@ -2,23 +2,29 @@ package ejercicios;
 
 import java.util.Scanner;
 
+//Adrián Navarro Buceta
 
 public class Ejercicio001 {
 	//COMPLETAR METODO
 	public double suma(double d, double e) {
-        return 0.0;
+        return d + e;
     }
 	//COMPLETAR METODO
     public double resta(double d, double e) {
-        return 0.0;
+        return d - e;
     }
     //COMPLETAR METODO
     public double multiplicacion(double d, double e) {
-        return 0.0;
+        return d * e;
     }
     //COMPLETAR METODO
     public double division(double d, double e) {
-        return 0.0;
+
+        if (e == 0) {
+            throw new ArithmeticException("No se puede dividir entre 0");
+        }
+
+        return d / e;
     }
 
     //COMPLETAR METODO

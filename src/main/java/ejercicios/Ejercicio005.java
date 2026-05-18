@@ -2,9 +2,16 @@ package ejercicios;
 
 public class Ejercicio005 {
 	
-	//COMPLETAR METODO
+	//Adrián Navarro Buceta
+	
 	public String describirNumero(int numero) {
-		return "";
+		if (numero > 0) {
+			return "El número es positivo.";
+		} else if (numero < 0) {
+			return "El número es negativo.";
+		} else {
+			return "El número es cero.";
+		}
     }
 
     public static void main(String[] args) {

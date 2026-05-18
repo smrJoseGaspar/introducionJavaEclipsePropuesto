@@ -2,9 +2,19 @@ package ejercicios;
 
 public class Ejercicio009 {
 	
-	//COMPLETAR METODO
 	public double obtenerMayor(double a, double b, double c) {
-		return 0.0;
+		
+		double mayor = a;
+		
+		if (b > mayor) {
+			mayor = b;
+		}
+		
+		if (c > mayor) {
+			mayor = c;
+		}
+		
+		return mayor;
     }
 
     public static void main(String[] args) {

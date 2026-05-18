@@ -4,9 +4,15 @@ import java.util.Scanner;
 
 public class Ejercicio027 {
 	
-	//COMPLETAR METODO
 	public void decimalABinario() {
         
+        Scanner scanner = new Scanner(System.in);
+        
+        int numero = scanner.nextInt();
+        
+        String binario = Integer.toBinaryString(numero);
+        
+        System.out.println("Binario: " + binario);
     }
 
     public static void main(String[] args) {

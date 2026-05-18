@@ -2,13 +2,24 @@ package ejercicios;
 
 public class Ejercicio008 {
 	
-	//COMPLETAR METODO
+	//Adrián Navarro Buceta
+	
 	public boolean esBisiesto(int año) {
+		
+		if ((año % 4 == 0 && año % 100 != 0) || (año % 400 == 0)) {
+			return true;
+		}
+		
         return false;
     }
-	//COMPLETAR METODO
+
     public String describirAño(int año) {
-        return "";
+    	
+    	if (esBisiesto(año)) {
+    		return año + " ES bisiesto";
+    	} else {
+    		return año + " NO es bisiesto";
+    	}
     }
 
     public static void main(String[] args) {

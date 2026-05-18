@@ -1,9 +1,11 @@
 package ejercicios;
 
 public class Ejercicio004 {
-	//COMPLETAR METODO
+	
+	//Adrián Navarro Buceta
+	
 	public double calcularArea(double base, double altura) {
-		return 0.0;
+		return (base * altura) / 2.0;
     }
 
     public static void main(String[] args) {
