@@ -2,8 +2,10 @@ package ejercicios;
 
 public class Ejercicio018 {
 	
-	//COMPLETAR METODO
+	//Adrián Navarro Buceta
+	
 	public void saludar(String nombre) {
+		System.out.println("¡Hola " + nombre + "!");
     }
 
     public static void main(String[] args) {

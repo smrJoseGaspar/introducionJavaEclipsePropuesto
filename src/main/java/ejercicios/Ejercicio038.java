@@ -1,19 +1,45 @@
 package ejercicios;
 
 public class Ejercicio038 {
-	// COMPLETAR METODO: Genera numero aleatorio 1-50
+	
+	//Adrián Navarro Buceta
+	
+	// Genera número aleatorio entre 1 y 50
     public int generarNumeroSecreto() {
-    	return -1;
+    	return (int)(Math.random() * 50) + 1;
     }
     
-    // COMPLETAR METODO: Compara intento con secreto y dice resultado
+    // Compara intento con el número secreto
     public String comprobarIntento(int intento, int numeroSecreto) {
-    	return "";
+    	
+    	if (intento < numeroSecreto) {
+    		return "¡Más alto!";
+    	} else if (intento > numeroSecreto) {
+    		return "¡Más bajo!";
+    	} else {
+    		return "¡CORRECTO! El número era: " + numeroSecreto;
+    	}
     }
 
-    // COMPLETAR METODO: Funcion principal que usa ambos modulos
+    // Juego principal
     public void adivinarNumero() {
         
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        
+        int numeroSecreto = generarNumeroSecreto();
+        int intento;
+        String resultado;
+        
+        do {
+            System.out.print("Introduce un número: ");
+            intento = scanner.nextInt();
+            
+            resultado = comprobarIntento(intento, numeroSecreto);
+            System.out.println(resultado);
+            
+        } while (intento != numeroSecreto);
+        
+        scanner.close();
     }
     
     public static void main(String[] args) {

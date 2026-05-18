@@ -4,14 +4,36 @@ import java.util.Scanner;
 
 public class Ejercicio025 {
 	
-	//COMPLETAR METODO
+	//Adrián Navarro Buceta
+	
 	public void numerosPrimosHastaN() {
         
+        Scanner scanner = new Scanner(System.in);
+        
+        int n = scanner.nextInt();
+        
+        System.out.println("Números primos hasta " + n + ":");
+        
+        for (int i = 2; i <= n; i++) {
+            if (esPrimo(i)) {
+                System.out.print(i + " ");
+            }
+        }
     }
 	
-	//COMPLETAR METODO
 	private boolean esPrimo(int n) {
-        return false;
+		
+        if (n < 2) {
+            return false;
+        }
+        
+        for (int i = 2; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        
+        return true;
     }
 
     public static void main(String[] args) {

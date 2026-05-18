@@ -3,10 +3,22 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio015 {
+
 	
-	//COMPLETAR METODO
+	//Adrián Navarro Buceta
+	
 	public void mostrarMultiplosTres(int n) {
 		
+		if (n < 3) {
+			System.out.println("No debe mostrar múltiplos si N < 3");
+			return;
+		}
+		
+		System.out.println("Múltiplos de 3 hasta " + n);
+		
+		for (int i = 3; i <= n; i += 3) {
+			System.out.print(i + " ");
+		}
     }
 
     public static void main(String[] args) {
