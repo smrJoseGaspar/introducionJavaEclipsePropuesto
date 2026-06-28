@@ -6,8 +6,22 @@ public class Ejercicio012 {
 	
 	//COMPLETAR METODO
 	public int sumarHastaCero() {
-		return 0;
-    }
+
+	    Scanner scanner = new Scanner(System.in);
+
+	    int suma = 0;
+	    int numero;
+
+	    do {
+	        System.out.print("Introduce un número (0 para terminar): ");
+	        numero = scanner.nextInt();
+	        suma += numero;
+	    } while (numero != 0);
+
+	    scanner.close();
+
+	    return suma;
+	}
 	
 
     public static void main(String[] args) {

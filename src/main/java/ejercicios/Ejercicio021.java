@@ -4,8 +4,27 @@ public class Ejercicio021 {
 	
 	//COMPLETAR METODO
 	public int contarVocales(String texto) {
-        return 0;
-    }
+
+		if (texto == null) {
+		    return 0;
+		}
+
+		int contador = 0;
+
+		texto = texto.toLowerCase();
+
+	    for (int i = 0; i < texto.length(); i++) {
+
+	        char letra = texto.charAt(i);
+
+	        if (letra == 'a' || letra == 'e' || letra == 'i' ||
+	            letra == 'o' || letra == 'u') {
+	            contador++;
+	        }
+	    }
+
+	    return contador;
+	}
 
     public static void main(String[] args) {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
